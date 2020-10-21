@@ -207,12 +207,14 @@ An example can be seen in `drop`, here the amount of elements to drop gets small
 
 Fill in the missing part in the function `take` to take the first `n` elements of a list.
 
+#### Stretch exercises!
+
 And sometimes the stop condition is different than reaching the end of the list.
 In `takeWhile` the recursion is cut short when a predicate no longer holds.
 
 Implement the function `dropWhile` to drop elements so long a predicate `p` holds.
 
-#### Stretch exercises!
+
 You may have noticed a pattern, there are some reoccurring elements, in recursive functions.
 1. A value for the empty list
 2. A computation per element

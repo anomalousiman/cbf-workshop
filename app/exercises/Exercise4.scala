@@ -35,6 +35,8 @@ object Exercise4 {
       case Nil => Nil
     }
 
+  // Stretch exercises!
+  
   def takeWhile[T](xs: List[T])(p: T => Boolean): List[T] =
     xs match {
       case head :: tail if (p(head)) => head :: takeWhile(tail)(p)
@@ -44,8 +46,6 @@ object Exercise4 {
 
   def dropWhile[T](xs: List[T])(p: T => Boolean): List[T] =
     ???
-
-  // Stretch exercises!
 
   def fold[In, Out](in: List[In], base: Out)(f: (In, Out) => Out): Out =
     in match {
