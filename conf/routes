@@ -1,0 +1,9 @@
+GET         /api/status                                        controllers.StatusController.status
+GET         /api/product/:productId                            controllers.HomeController.productDetails(productId: Int)
+GET         /api/products                                      controllers.HomeController.getAllProducts
+PUT         /api/products/likes/:productId                     controllers.HomeController.like(productId: Int)
+DELETE      /api/products/likes/:productId                     controllers.HomeController.unlike(productId: Int)
+GET         /api/likes                                         controllers.HomeController.getLikes
+
+GET         /                                                  controllers.Assets.at(path="/public/build", file="index.html")
+GET         /static/*file                                      controllers.Assets.at(path="/public/build/static", file)
